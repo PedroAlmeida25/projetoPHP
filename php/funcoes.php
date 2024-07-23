@@ -1,6 +1,8 @@
 <?php
     $num1 = 0;
     $num2 = 3;
+    $par = 0;
+    $impar = 0;
     $numero_binario = '1010';
     $numero_decimal = '32';
 
@@ -32,6 +34,9 @@
         $numero_binario = bindec($numero_decimal);
     }
 
+    function parImpar($num1){
+    
+    }
 
     function escolher($num1){
         switch ($num1){
@@ -49,6 +54,12 @@
                 break;
             case 5:
                 return "Marrom";
+                break;
+            case 6:
+                return "Vermelho";
+                break;
+            case 7:
+                return "Laranja";
                 break;
             default:
                 return "Cor não identificada";

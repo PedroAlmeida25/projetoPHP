@@ -24,7 +24,7 @@
                 $num1 = $_POST['num1'];
                 $num2 = $_POST['num2'];
             ?>
-        </button><br><br>
+        </button><br>
 
         <textarea cols="40" rows="100" readOnly>
             <?php 
