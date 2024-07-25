@@ -117,19 +117,23 @@
     }
 
     function primo($num1){
-        for($i = 2; $i > $num1; $i++){
-            if($n % $count == 0){
-                return "é multiplo de $i<br />";
-                $divisores++;
-            }
-
-            if($divisores){  
-                return "não é, tem $divisores divisores além de 1 e ele mesmo";
-            }else{
-                return "primo!";
-            }
+        if($num1 < 2){
+            return "não é primo";
         }
-    }
+        else{
+            if($num1 == 2 || $num1 == 3 || $num1 == 5 || $num1 == 7){
+                return "É primo";
+            }
+            else{
+                if($num1 % 2 == 0 || $num1 % 3 == 0 || $num1 % 5 == 0 || $num1 % 7 == 0 || $num1 % 11 == 0){
+                    return "não é primo";
+                }
+                else{
+                    return "É primo";
+                }
+            }   
+        }
+    }//Fim da função
 
     function escolher($num1){
         switch ($num1){
