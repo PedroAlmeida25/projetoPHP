@@ -2,6 +2,8 @@
     $num1 = 0;
     $num2 = 0;
     $num3 = 0;
+    $divisores = 0;
+    $i = 0;
     $numero_binario = '1010';
     $numero_decimal = '32';
 
@@ -112,6 +114,21 @@
 
     function media($num1, $num2, $num3){
         return ($num1 + $num2 + $num3) / 3;
+    }
+
+    function primo($num1){
+        for($i = 2; $i > $num1; $i++){
+            if($n % $count == 0){
+                return "é multiplo de $i<br />";
+                $divisores++;
+            }
+
+            if($divisores){  
+                return "não é, tem $divisores divisores além de 1 e ele mesmo";
+            }else{
+                return "primo!";
+            }
+        }
     }
 
     function escolher($num1){

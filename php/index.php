@@ -21,7 +21,7 @@
 
         <label>Terceiro número:</label>
         <input type="number" id="num3" name="num3"><br>
-
+    
         <button>Calcular
             <?php
                 $num1 = $_POST['num1'];
@@ -37,8 +37,8 @@
                     "\nA multiplicação é: ".mult($num1, $num2).
                     "\nA divisão é: ".dividir($num1, $num2).
                     "\nA cor escolhida é: ".escolher($num1).
-                    "\nA transferência de decimal para binário é: ".converterBinario($numero_binario).
-                    "\nA transferência de binário para decimal é: ".converterDecimal($numero_decimal).
+                    "\nA conversão de decimal para binário é: ".converterBinario($numero_binario).
+                    "\nA conversão de binário para decimal é: ".converterDecimal($numero_decimal).
                     "\nEsse número é: ".parImpar($num1).
                     "\nVocê é: ".idade($num1).
                     "\nO dobro desse número é: ".dobro($num1).
@@ -46,7 +46,8 @@
                     "\nO maior número é: ".maiorTres($num1, $num2, $num3).
                     "\nO número é: ".positivoNegativo($num1).
                     "\n".tabuada($num1).
-                    "\nA média dos três números é: ".media($num1, $num2, $num3);
+                    "\nA média dos três números é: ".media($num1, $num2, $num3).
+                    "\nEsse número: ".primo($num1);
             ?>
         </textarea>
     </form>
